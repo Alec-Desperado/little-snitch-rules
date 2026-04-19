@@ -1,14 +1,16 @@
 {
-  "description" : "",
-  "name" : "Find My Mac",
+  "description" : "Find your Apple devices like iPhone, Apple Watch, AirPods and more with Find My.",
+  "name" : "Find My",
   "rules" : [
     {
       "action" : "allow",
-      "creationDate" : 1613401302.90749,
-      "modificationDate" : 1613401302.90749,
-      "owner" : "system",
       "process" : "\/usr\/libexec\/findmydeviced",
       "remote-domains" : "icloud.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.findmy",
+      "remote" : "any"
     }
   ]
 }
