@@ -36,15 +36,12 @@
     },
     {
       "action" : "allow",
-      "ports": "any",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol": "any",
       "remote" : "any",
       "via" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig"
     },
     {
       "action" : "allow",
-      "ports" : "any",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
       "protocol" : "any",
       "remote" : "any",
