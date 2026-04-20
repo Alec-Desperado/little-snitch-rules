@@ -1,0 +1,90 @@
+{
+  "description" : "",
+  "name" : "Antigravity (Google)",
+  "denied-remote-addresses": ["8.8.8.8", "8.8.4.4"],
+  "denied-remote-domains": ["dns.google", "opendns.com"]
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "53",
+      "priority": "high",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "udp",
+      "remote-addresses" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "priority": "high",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "ports" : "53",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "udp",
+      "remote-addresses" : "100.64.0.0-100.127.255.255"
+    },
+    {
+      "action" : "deny",
+      "ports" : "53",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "udp",
+      "remote-domains" : ["opendns.com", "dns.google"],
+      "via" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "tcp",
+      "remote-domains" : "atuin.sh",
+      "via" : "path.opt\/homebrew\/Cellar\/atuin\/*\/bin\/atuin"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "remote" : "any",
+      "via" : "path.opt\/homebrew\/Cellar\/curl\/*\/bin\/curl"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "tcp",
+      "remote-domains" : ["github.com", "githubusercontent.com"],
+      "via" : "path.opt\/homebrew\/Cellar\/tlrc\/*\/bin\/tldr"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "remote" : "any",
+      "via" : "path.opt\/homebrew\/Cellar\/wget\/*\/bin\/wget"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "tcp",
+      "remote-domains" : "npmjs.org",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "tcp",
+      "remote-domains" : ["pypi.org", "pythonhosted.org"]
+      "via" : "path.opt\/homebrew\/Cellar\/uv\/*\/bin\/uv"
+    },
+    {
+      "action" : "allow",
+      "ports" : "22",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "tcp",
+      "remote-domains" : "github.com"
+    }
+  ]
+}
