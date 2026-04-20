@@ -221,6 +221,11 @@
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
       "remote" : "any",
       "via" : "path.opt\/homebrew\/Cellar\/nmap\/*\/bin\/nmap"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
+      "remote" : "any"
     }
   ]
 }
