@@ -1,8 +1,6 @@
 {
   "description" : "",
   "name" : "Antigravity (Google)",
-  "denied-remote-addresses": ["8.8.8.8", "8.8.4.4"],
-  "denied-remote-domains": ["dns.google", "opendns.com"]
   "rules" : [
     {
       "action" : "allow",
@@ -25,13 +23,18 @@
       "ports" : "53",
       "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
       "protocol" : "udp",
-      "remote-addresses" : "100.64.0.0-100.127.255.255"
+      "remote-addresses" : ["8.8.8.8", "8.8.4.4"]
     },
     {
       "action" : "deny",
       "ports" : "53",
       "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
       "protocol" : "udp",
+      "remote-addresses" : "100.64.0.0-100.127.255.255"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
       "remote-domains" : ["opendns.com", "dns.google"],
       "via" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig"
     },
