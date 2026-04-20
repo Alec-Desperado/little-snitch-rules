@@ -12,15 +12,7 @@
     },
     {
       "action" : "allow",
-      "ports" : "443",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
-      "remote-addresses" : "76.76.2.22",
-      "via" : "path.opt\/homebrew\/Cellar\/ctrld\/*\/bin\/ctrld"
-    },
-    {
-      "action" : "allow",
-      "ports" : "853",
+      "ports" : "443, 853",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
       "protocol" : "tcp",
       "remote-addresses" : "76.76.2.22",
@@ -60,38 +52,12 @@
       "ports" : "443",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
       "protocol" : "tcp",
-      "remote-domains" : "astral.sh",
-      "via" : "path.opt\/homebrew\/Cellar\/uv\/*\/bin\/uv"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
       "remote-domains" : "atuin.sh",
       "via" : "path.opt\/homebrew\/Cellar\/atuin\/*\/bin\/atuin"
     },
     {
       "action" : "allow",
-      "ports" : "443",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
-      "remote-domains" : "bitwarden.com",
-      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
-      "remote-domains" : "github.com",
-      "via" : "\/Users\/desperado\/.local\/share\/uv\/python\/cpython-3.13.2-macos-aarch64-none\/bin\/python3.13"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
       "remote" : "any",
       "via" : "path.opt\/homebrew\/Cellar\/wget\/*\/bin\/wget"
     },
@@ -116,14 +82,6 @@
       "ports" : "443",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
       "protocol" : "tcp",
-      "remote-domains" : "httpie.io",
-      "via" : "path.opt\/homebrew\/Cellar\/python@3.13\/*\/Frameworks\/Python.framework\/Versions\/3.13\/Resources\/Python.app\/Contents\/MacOS\/Python"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
       "remote-domains" : ["nodejs.org", "npmjs.org"],
       "via" : "path.opt\/homebrew\/Cellar\/volta\/*\/libexec\/bin\/volta"
     },
@@ -140,24 +98,8 @@
       "ports" : "443",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
       "protocol" : "tcp",
-      "remote-domains" : ["nodejs.org", "npmjs.org"],
-      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
-      "remote-domains" : "pie.dev",
-      "via" : "path.opt\/homebrew\/Cellar\/python@3.13\/*\/Frameworks\/Python.framework\/Versions\/3.13\/Resources\/Python.app\/Contents\/MacOS\/Python"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
-      "remote-domains" : "publicsuffix.org",
-      "via" : "\/Users\/desperado\/.local\/share\/uv\/python\/cpython-3.13.2-macos-aarch64-none\/bin\/python3.13"
+      "remote-domains" : "astral.sh",
+      "via" : "path.opt\/homebrew\/Cellar\/uv\/*\/bin\/uv"
     },
     {
       "action" : "allow",
@@ -180,6 +122,22 @@
       "ports" : "443",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
       "protocol" : "tcp",
+      "remote-domains" : "bitwarden.com",
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
+      "protocol" : "tcp",
+      "remote-domains" : ["nodejs.org", "npmjs.org"],
+      "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
+      "protocol" : "tcp",
       "remote-domains" : "yarnpkg.com",
       "via" : "path.opt\/homebrew\/Cellar\/node\/*\/bin\/node"
     },
@@ -192,19 +150,15 @@
     },
     {
       "action" : "allow",
-      "ports" : "443",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
       "remote" : "any",
-      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
-    },
+      "via" : "identifier.SHA256\/5e7cec3fb68a25f439c81d0a8510f8e2e0309ef194e68f916aa0443cd8506657"
+    }
     {
       "action" : "allow",
-      "ports" : "443",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
       "remote" : "any",
-      "via" : "path.opt\/homebrew\/Cellar\/speedtest\/*\/bin\/speedtest"
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
     },
     {
       "action" : "allow",
@@ -240,17 +194,7 @@
     },
     {
       "action" : "allow",
-      "ports" : "8080",
       "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "tcp",
-      "remote" : "any",
-      "via" : "path.opt\/homebrew\/Cellar\/speedtest\/*\/bin\/speedtest"
-    },
-    {
-      "action" : "allow",
-      "ports" : "8080",
-      "process" : "identifier.24VZTF6M5V\/com.mitchellh.ghostty",
-      "protocol" : "udp",
       "remote" : "any",
       "via" : "path.opt\/homebrew\/Cellar\/speedtest\/*\/bin\/speedtest"
     },
