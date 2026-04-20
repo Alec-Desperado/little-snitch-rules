@@ -9,6 +9,20 @@
       "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
       "protocol" : "udp",
       "remote" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "ports" : "53",
+      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
+      "protocol" : "udp",
+      "remote-addresses" : "8.8.8.8, 8.8.4.4"
     }
   ]
 }
