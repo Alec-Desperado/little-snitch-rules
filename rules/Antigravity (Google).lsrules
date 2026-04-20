@@ -1,5 +1,5 @@
 {
-  "description" : "",
+  "description" : "Google Antigravity is a next-generation integrated development environment (IDE).",
   "name" : "Antigravity (Google)",
   "rules" : [
     {
@@ -23,7 +23,7 @@
       "ports" : "53",
       "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
       "protocol" : "udp",
-      "remote-addresses" : ["8.8.8.8", "8.8.4.4"]
+      "remote-addresses" : "8.8.8.8, 8.8.4.4"
     },
     {
       "action" : "deny",
