@@ -13,7 +13,6 @@
     {
       "action" : "deny",
       "ports" : "443",
-      "priority": "high",
       "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
       "protocol" : "udp",
       "remote" : "any"
