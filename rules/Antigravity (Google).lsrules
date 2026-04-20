@@ -1,28 +1,28 @@
 {
-  "description" : "Google Antigravity is a next-generation integrated development environment (IDE).",
-  "name" : "Antigravity (Google)",
-  "rules" : [
+  "description": "Google Antigravity is a next-generation integrated development environment (IDE).",
+  "name": "Antigravity (Google)",
+  "rules": [
     {
-      "action" : "allow",
-      "ports" : "53",
+      "action": "allow",
+      "ports": "53",
       "priority": "high",
-      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
-      "protocol" : "udp",
-      "remote" : "local-net"
+      "process": "identifier.EQHXZ8M8AV/com.google.antigravity",
+      "protocol": "udp",
+      "remote": "local-net"
     },
     {
-      "action" : "deny",
-      "ports" : "443",
-      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
-      "protocol" : "udp",
-      "remote" : "any"
+      "action": "deny",
+      "ports": "443",
+      "process": "identifier.EQHXZ8M8AV/com.google.antigravity",
+      "protocol": "udp",
+      "remote": "any"
     },
     {
-      "action" : "deny",
-      "ports" : "53",
-      "process" : "identifier.EQHXZ8M8AV\/com.google.antigravity",
-      "protocol" : "udp",
-      "remote-addresses" : "8.8.8.8, 8.8.4.4"
+      "action": "deny",
+      "ports": "53",
+      "process": "identifier.EQHXZ8M8AV/com.google.antigravity",
+      "protocol": "udp",
+      "remote-addresses": "8.8.8.8, 8.8.4.4"
     },
     {
       "action": "deny",
@@ -96,6 +96,24 @@
       "process": "identifier.EQHXZ8M8AV/com.google.antigravity",
       "protocol": "tcp",
       "remote-domains": "github.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.EQHXZ8M8AV/com.google.antigravity",
+      "protocol": "tcp",
+      "remote-domains": [
+        "antigravity-unleash.goog",
+        "googleapis.com",
+        "googleusercontent.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "identifier.EQHXZ8M8AV/com.google.antigravity",
+      "protocol": "tcp",
+      "remote-addresses": "142.250.0.0-142.251.255.255"
     }
   ]
 }
