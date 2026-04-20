@@ -1,0 +1,59 @@
+{
+  "description": "Deny Rules",
+  "name": "Deny Rules",
+  "rules": [
+    {
+      "action": "deny",
+      "notes": "Trackers",
+      "process": "any",
+      "remote-domains": [
+        "luckyorange.com",
+        "googletagmanager.com",
+        "segment.io",
+        "subscribers.com",
+        "ptengine.com",
+        "tritondigital.com"
+      ]
+    },
+    {
+      "action": "deny",
+      "notes": "Useless Crash and Metrics reporting",
+      "process": "any",
+      "remote-domains": [
+        "crashlytics.com",
+        "sentry.io"
+      ]
+    },
+    {
+      "action": "deny",
+      "notes": "Ad services (not caught by Peter Lowe's list)",
+      "process": "any",
+      "remote-domains": [
+        "addtoany.com",
+        "adxcel.com",
+        "consensu.org",
+        "onetrust.com"
+      ]
+    },
+    {
+      "action": "deny",
+      "notes": "Shady / Generally Unknown",
+      "process": "any",
+      "remote-domains": [
+        "pndsn.com",
+        "rec-engine.com",
+        "sail-personalize.com",
+        "sail-track.com"
+      ]
+    },
+    {
+      "action": "deny",
+      "notes": "Marketing Crap",
+      "process": "any",
+      "remote-domains": [
+        "bazaarvoice.com",
+        "braze.com"
+      ]
+    }
+  ]
+}
