@@ -1,0 +1,117 @@
+{
+  "description" : "DNS rules for all process.",
+  "name" : "All-Process-DNS",
+  "rules" : [
+    {
+      "action" : "allow",
+      "notes": "Allow Shadowrocket VPN DNS IPv4 port 53.",
+      "ports" : "53",
+      "process": "any",
+      "protocol" : "udp",
+      "remote-addresses" : "198.18.*.*"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow local-network DNS:53.",
+      "ports" : "53",
+      "process": "any",
+      "protocol" : "any",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny remote-DNS prot:53.",
+      "ports" : "53",
+      "process": "any",
+      "protocol" : "any",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny Cloudflare DNS IPv4.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-addresses" : "1.0.0.1, 1.1.1.1"
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny Cloudflare DNS.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-domains": [
+        "chrome.cloudflare-dns.com",
+        "mozilla.cloudflare-dns.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny Google DNS IPv4.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-addresses" : "8.4.4.8, 8.8.8.8"
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny Google DNS.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-domains": [
+        "dns.google",
+        "dns.google.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny Yandex DNS IPv4.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-addresses" : "77.88.8.8, 77.88.8.88"
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny Yandex DNS.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-domains": [
+        "dns.yandex.net"
+      ]
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny OpenDNS.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-domains": [
+        "opendns.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny AdGuard DNS.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-domains": [
+        "dns.adguard-dns.com",
+        "dns.adguard.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "notes": "Deny DuckDuck DNS.",
+      "ports" : "any",
+      "process": "any",
+      "protocol" : "any",
+      "remote-domains": [
+        "duckdns.org"
+      ]
+    }
+  ]
+}
