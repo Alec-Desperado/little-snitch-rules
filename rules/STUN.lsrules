@@ -384,6 +384,7 @@
       "remote-domains": [
         "eu-default-stun-voip-azure.dyn.blackberry.net",
         "eu-stun-voip-azure.dyn.blackberry.net",
+        "fpjs.io",
         "global.stun.twilio.com",
         "help.mikrotik.com",
         "iphone-stun.strato-iphone.de",
