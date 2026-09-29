@@ -1,0 +1,158 @@
+{
+  "description" : "Safari",
+  "name" : "Safari",
+  "rules" : [
+    {
+      "action" : "allow",
+      "notes": "Allow HTTPS",
+      "ports" : "443",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow QUIC",
+      "ports" : "443",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "remote-addresses" : "176.106.250.64"
+    },
+    {
+      "action" : "allow",
+      "ports" : "3478",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-hosts" : "ping.ui.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "3478",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-hosts" : "static.ui.com"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow ControlD DNS proxy",
+      "ports" : "3478",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-addresses" : "206.253.90.228"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow ControlD DNS proxy",
+      "ports" : "3478",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-addresses" : "206.253.90.229"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "notes": "Allow ControlD DNS proxy",
+      "ports" : "55094",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-addresses" : "206.253.90.228"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow QMS.ru on port 20000",
+      "ports" : "20000",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "tcp",
+      "remote-hosts" : [
+        "linenew-host.qms.ru",
+        "fortex-host.qms.ru",
+        "moscow.qms.ru",
+        "sits-host.qms.ru",
+        "speedtestmkc-host.qms.ru",
+        "teamhost-host.qms.ru",
+        "tver.qms.ru",
+        "vladimir.qms.ru",
+        "zencom-host.qms.ru"
+      ]
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow Chattern IPv4",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-addresses" : "176.193.145.116"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow Chattern",
+      "ports" : "29932",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-hosts" : "angara.chattern.ru"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow Chattern",
+      "ports" : "3478",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-hosts" : "turing.chattern.ru"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow Chattern",
+      "ports" : "44000",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-hosts" : "turing.chattern.ru"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow Chattern",
+      "ports" : "46254",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-hosts" : "turing.chattern.ru"
+    },
+    {
+      "action" : "allow",
+      "ports" : "1030",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "tcp",
+      "remote-hosts" : "iptools-6.top10vpn.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "1156",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "tcp",
+      "remote-hosts" : "iptools-6.top10vpn.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "3478",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "tcp",
+      "remote-hosts" : "turn.cloudflare.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "5349",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "tcp",
+      "remote-hosts" : "turn.cloudflare.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "3478",
+      "process" : "identifier.APPLE\/com.apple.Safari",
+      "protocol" : "udp",
+      "remote-hosts" : "turn.cloudflare.com"
+    }
+  ]
+}

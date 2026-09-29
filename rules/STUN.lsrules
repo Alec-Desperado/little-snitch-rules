@@ -1,6 +1,6 @@
 {
   "description": "Deny STUN.",
-  "name": "Deny STUN.",
+  "name": "Deny STUN",
   "rules": [
     {
       "action": "deny",
