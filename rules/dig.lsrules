@@ -1,0 +1,51 @@
+{
+  "description" : "dig cli rules",
+  "name" : "dig",
+  "rules" : [
+    {
+      "action" : "allow",
+      "notes": "Allow all DNS:53/TCP",
+      "ports" : "53",
+      "priority" : "high",
+      "process" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow all DNS:53/UDP",
+      "ports" : "53",
+      "priority" : "high",
+      "process" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow all DoH:443/TCP",
+      "ports" : "443",
+      "priority" : "high",
+      "process" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow all DoT:853/TCP",
+      "ports" : "853",
+      "priority" : "high",
+      "process" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "notes": "Allow all DoQ:853/UDP",
+      "ports" : "443",
+      "priority" : "high",
+      "process" : "path.opt\/homebrew\/Cellar\/bind\/*\/bin\/dig",
+      "protocol" : "udp",
+      "remote" : "any"
+    }
+  ]
+}
