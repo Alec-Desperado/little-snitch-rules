@@ -48,7 +48,7 @@
       "notes": "Deny Google DNS IPv4.",
       "process": "any",
       "protocol" : "any",
-      "remote-addresses" : "8.4.4.8, 8.8.8.8"
+      "remote-addresses" : "8.8.4.4, 8.8.8.8"
     },
     {
       "action" : "deny",
