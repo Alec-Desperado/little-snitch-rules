@@ -1,0 +1,20 @@
+{
+  "description" : "Tules for trustd",
+  "name" : "Trustd",
+  "rules" : [
+    {
+      "action" : "allow",
+      "notes" : "",
+      "ports" : "80, 443",
+      "priority" : "high",
+      "remote-domains" : "digital.gov.ru"
+    },
+    {
+      "action" : "allow",
+      "notes" : "",
+      "ports" : "80, 443",
+      "priority" : "high",
+      "remote-domains" : "voskhod.ru"
+    }
+  ]
+}
