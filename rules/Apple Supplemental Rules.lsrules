@@ -94,64 +94,6 @@
     },
     {
       "action" : "allow",
-      "notes" : "Refer to https://support.apple.com/en-us/HT210060\n - Certificate validation",
-      "ports" : "80",
-      "priority" : "high",
-      "remote-hosts" : [
-        "crl.entrust.net",
-        "ocsp.entrust.net"
-      ]
-    },
-    {
-      "action" : "allow",
-      "notes" : "Refer to https://support.apple.com/en-us/HT210060\n - Certificate validation",
-      "ports" : "80",
-      "priority" : "high",
-      "remote-hosts" : [
-        "crl3.digicert.com",
-        "crl4.digicert.com",
-        "ocsp.digicert.com",
-        "ocsp2.digicert.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "notes" : "Refer to https://...\n - Certificate validation",
-      "ports" : "80",
-      "priority" : "high",
-      "remote-hosts" : [
-        "ocsp.globalsign.com",
-        "ocsp2.globalsign.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "notes" : "Refer to https://...\n - Certificate validation",
-      "ports" : "80",
-      "priority" : "high",
-      "remote-hosts" : [
-        "ocsp.usertrust.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "notes" : "Refer to https://...\n - Certificate validation",
-      "ports" : "80",
-      "priority" : "high",
-      "remote-hosts" : [
-        "ocsp.comodoca.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "notes" : "",
-      "ports" : "80, 443",
-      "priority" : "high",
-      "process" : "identifier.APPLE\/com.apple.trustd",
-      "remote-domains" : "lencr.org"
-    },
-    {
-      "action" : "allow",
       "notes" : "Refer to https://support.apple.com/en-us/HT210060\n - iCloud",
       "ports" : "443",
       "remote-domains" : [
