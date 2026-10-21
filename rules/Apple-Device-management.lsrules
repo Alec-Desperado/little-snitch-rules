@@ -1,0 +1,116 @@
+{
+  "description": "Apple Device management.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple Device management",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Push notifications",
+      "ports": "443, 80, 5223, 2197",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "push.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  DEP provisional enrollment",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "deviceenrollment.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Used by an device management service to disable Activation Lock on managed devices",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "deviceservices-external.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Used by an device management service to identify which software updates are available to devices that use managed software updates",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "gdmf.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  APNs certificate request portal",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "identity.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Hosts enrollment profiles used when devices enroll in Apple School Manager or Apple Business through Device Enrollment",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "iprofiles.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Device management services to upload enrollment profiles used by clients enrolling through Device Enrollment in Apple School Manager or Apple Business, and to look up devices and accounts",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "mdmenrollment.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Required to log in to a Managed Apple Account on Shared iPad",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "setup.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  evice management services to perform operations related to Apps and Books, like assigning or revoking licenses on a device",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "vpp.itunes.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Managed device attestation",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "appattest.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Service discovery for account-driven enrollments",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "axm-servicediscovery.apple.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "description": "Additional rules for Apple IPv4 and IPv6.",
+  "name": "Apple Supplemental Rules",
+  "rules": [
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "notes": "Apple IPv4 ranges.\n  Refer to https://support.apple.com/en-us/101555",
+      "process": "appGroup.macOS",
+      "remote-addresses": "17.0.0.0/8"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv4 ranges.\n  Refer to https://support.apple.com/en-us/101555",
+      "ports": "80, 443",
+      "process": "appGroup.macOS",
+      "remote-addresses": "17.0.0.0/8"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv4 ranges.\n  Refer to https://support.apple.com/en-us/101555",
+      "ports": "5223, 2197",
+      "process": "appGroup.macOS",
+      "remote-addresses": "17.0.0.0/8"
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing icmp traffic to 17.0.0.0/8.\n  E.g. wifivelocityd is a known example",
+      "process": "appGroup.macOS",
+      "protocol": "icmp",
+      "remote-addresses": "17.0.0.0/8"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "notes": "Apple IPv6 ranges\n  Refer to https:https://support.apple.com/en-us/101555",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2403:300::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv6 ranges\n  Refer to https://support.apple.com/en-us/101555",
+      "ports": "80, 443",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2403:300::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple APNs ports\n  Refer to https://support.apple.com/en-us/102266",
+      "ports": "5223, 2197",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2403:300::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv6 ranges\n\nRefer to https://support.apple.com/en-us/101555",
+      "process": "appGroup.macOS",
+      "protocol": "58",
+      "remote-addresses": "2403:300::/32"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "notes": "Apple IPv6 ranges.\n  Refer to https://support.apple.com/en-us/101555",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2620:149::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv6 ranges\n  Refer to https://ipinfo.io/AS714/2620:149::/32",
+      "ports": "80, 443",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2620:149::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Refer to https://support.apple.com/en-us/102266",
+      "ports": "5223, 2197",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2620:149::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv6 ranges\n\nRefer to https://support.apple.com/en-us/101555",
+      "process": "appGroup.macOS",
+      "protocol": "58",
+      "remote-addresses": "2620:149::/32"
+    },
+    {
+      "action": "allow",
+      "direction": "incoming",
+      "notes": "Apple IPv4 ranges.\n  Refer to https://support.apple.com/en-us/101555",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2a01:b740::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv4 ranges.\n  Refer to https://support.apple.com/en-us/101555",
+      "ports": "80, 443",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2a01:b740::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Apple IPv4 ranges.\n  Refer to https://support.apple.com/en-us/101555",
+      "ports": "5223, 2197",
+      "process": "appGroup.macOS",
+      "remote-addresses": "2a01:b740::/32"
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing icmp traffic to 17.0.0.0/8.\n  E.g. wifivelocityd is a known example",
+      "process": "appGroup.macOS",
+      "protocol": "icmp",
+      "remote-addresses": "2a01:b740::/32"
+    }
+  ]
+}

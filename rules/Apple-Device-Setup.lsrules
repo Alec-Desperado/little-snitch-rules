@@ -1,0 +1,106 @@
+{
+  "description": "Apple Device setup rules.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple Device setup",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Device activation.",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "albert.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP, 80/TCP.\n  Internet connectivity validation for networks that use captive portals",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "captive.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP. ",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "gs.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP. ",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "humb.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP. ",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "static.ips.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  eSIM activation",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "sq-device.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP. ",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "tbsc.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Used by devices to set their date and time",
+      "ports": "123",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "time-ios.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Used by devices to set their date and time",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "time.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing port 443/TCP.\n  Used by devices to set their date and time",
+      "ports": "123",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "time-macos.apple.com"
+      ]
+    }
+  ]
+}

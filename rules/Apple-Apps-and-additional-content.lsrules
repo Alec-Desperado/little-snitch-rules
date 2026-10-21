@@ -1,0 +1,156 @@
+{
+  "description": "Apple Apps and additional content.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple Apps and additional content",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Store content such as apps, books, and music",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "itunes.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Store content such as apps, books, and music",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "apps.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Store content such as apps, books, and music, and apps from websites and alternative marketplaces",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "mzstatic.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  ",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "itunes.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Enterprise App validation",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "ppq.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  App notarization",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "api.apple-cloudkit.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  App validation, Touch ID and Face ID authentication for websites",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "appattest.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Installing apps from websites and alternative marketplaces",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "apps-marketplace.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Safari fraudulent website warnings",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "token.safebrowsing.apple"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  GarageBand downloadable content",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "audiocontentdownload.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Xcode downloadable components",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "devimages-cdn.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Xcode downloadable components",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "download.developer.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Swift Playground",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "playground-assets-cdn.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Aerial screen savers and wallpaper",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "sylvan.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  CloudKit content including XProtect updates and Voice Control assets",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "gateway.icloud.com"
+      ]
+    }
+  ]
+}

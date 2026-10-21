@@ -1,0 +1,217 @@
+{
+  "description": "Apple Software Updates.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple Software Updates",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iOS, iPadOS, and watchOS updates",
+      "ports": "80",
+      "priority" : "high",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "appldnld.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Rosetta 2 updates",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "configuration.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Software update catalog",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "gdmf.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iOS, iPadOS, tvOS, watchOS, and macOS updates",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "gg.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iOS, iPadOS, tvOS, watchOS, and macOS updates",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "gs.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS updates",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "ig.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Hosts software update catalogs",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "mesu.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS Recovery",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "oscdn.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS Recovery",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "osrecovery.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS updates",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "skl.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS updates",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "swcdn.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS updates",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "swdist.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS updates",
+      "ports": "443, 80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "swdownload.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  macOS updates",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "swscan.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Software update downloads",
+      "ports": "80",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "updates-http.cdn-apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Software update downloads",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "updates.cdn-apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  ",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "xp.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Software update catalog for additional components",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "gdmf-ados.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  OS updates for additional components",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "gsra.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Installing iOS, iPadOS, or macOS on an attached device",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "wkms-public.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Installing iOS, iPadOS, or macOS on an attached device",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "fcs-keys-pub-prod.cdn-apple.com"
+      ]
+    }
+  ]
+}

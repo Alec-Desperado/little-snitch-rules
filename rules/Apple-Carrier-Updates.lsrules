@@ -1,0 +1,70 @@
+{
+  "description": "Apple Carrier updates.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple Carrier updates",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Cellular carrier bundle updates",
+      "ports": "80",
+      "priority" : "high",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "appldnld.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Cellular carrier bundle updates",
+      "ports": "80",
+      "priority" : "high",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "appldnld.apple.com.edgesuite.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Carrier bundle update discovery",
+      "ports": "80",
+      "priority" : "high",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "itunes.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Carrier bundle update discovery",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "itunes.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Cellular carrier bundle updates",
+      "ports": "80",
+      "priority" : "high",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "updates-http.cdn-apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Cellular carrier bundle updates",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "updates.cdn-apple.com"
+      ]
+    }
+  ]
+}
