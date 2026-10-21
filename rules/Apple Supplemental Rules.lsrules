@@ -4,7 +4,7 @@
   "rules" : [
     {
       "action" : "allow",
-      "notes" : "Refer to https://support.apple.com/en-us/HT210060",
+      "notes" : "Refer to https://support.apple.com/en-us/101555",
       "direction" : "incoming",
       "remote-addresses" : "17.*.*.*"
     },
@@ -12,7 +12,7 @@
       "action" : "allow",
       "notes" : "Refer to https://support.apple.com/en-us/HT210060",
       "ports" : "80, 443",
-      "remote-addresses" : "17.*.*.*"
+      "remote-addresses" : "17.0.0.0/8"
     },
     {
       "action" : "allow",
