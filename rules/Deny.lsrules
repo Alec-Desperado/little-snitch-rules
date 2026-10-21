@@ -3,10 +3,8 @@
   "name": "Deny Rules",
   "rules": [
     {
-      "action": "deny",
-      "notes": "Trackers",
-      "process": "any",
-      "remote-domains": [
+      "denied-remote-notes": "Block tracking domain: %REMOTE%",
+      "denied-remote-domains": [
         "luckyorange.com",
         "googletagmanager.com",
         "segment.io",
@@ -16,19 +14,15 @@
       ]
     },
     {
-      "action": "deny",
       "notes": "Useless Crash and Metrics reporting",
-      "process": "any",
-      "remote-domains": [
+      "denied-remote-domains": [
         "crashlytics.com",
         "sentry.io"
       ]
     },
     {
-      "action": "deny",
       "notes": "Ad services (not caught by Peter Lowe's list)",
-      "process": "any",
-      "remote-domains": [
+      "denied-remote-domains": [
         "addtoany.com",
         "adxcel.com",
         "consensu.org",
@@ -36,10 +30,8 @@
       ]
     },
     {
-      "action": "deny",
       "notes": "Shady / Generally Unknown",
-      "process": "any",
-      "remote-domains": [
+      "denied-remote-domains": [
         "pndsn.com",
         "rec-engine.com",
         "sail-personalize.com",
@@ -47,10 +39,8 @@
       ]
     },
     {
-      "action": "deny",
       "notes": "Marketing Crap",
-      "process": "any",
-      "remote-domains": [
+      "denied-remote-domains": [
         "bazaarvoice.com",
         "braze.com"
       ]

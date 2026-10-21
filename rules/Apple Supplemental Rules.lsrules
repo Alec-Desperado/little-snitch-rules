@@ -6,7 +6,7 @@
       "action" : "allow",
       "notes" : "Refer to https://support.apple.com/en-us/101555",
       "direction" : "incoming",
-      "remote-addresses" : "17.*.*.*"
+      "remote-addresses" : "17.0.0.0/8"
     },
     {
       "action" : "allow",
@@ -18,25 +18,32 @@
       "action" : "allow",
       "notes" : "Refer to https://support.apple.com/en-us/102266",
       "ports" : "5223, 2197",
-      "remote-addresses" : "17.*.*.*"
+      "remote-addresses" : "17.0.0.0/8"
     },
     {
       "action" : "allow",
       "notes" : "Allow outgoing icmp traffic to 17.0.0.0/8.\n  E.g. wifivelocityd is a known example",
       "protocol" : "icmp",
-      "remote-addresses" : "17.*.*.*"
+      "remote-addresses" : "17.0.0.0/8"
     },
+
+
+
+
+
+
+
     {
       "action" : "allow",
       "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
       "direction" : "incoming",
-      "remote-addresses" : "2620:149:*:*:*:*:*:*"
+      "remote-addresses" : "2620:149::/32"
     },
     {
       "action" : "allow",
       "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
       "ports" : "80, 443",
-      "remote-addresses" : "2620:149:*:*:*:*:*:*"
+      "remote-addresses" : "2620:149::/32"
     },
     {
       "action" : "allow",
@@ -48,19 +55,19 @@
       "action" : "allow",
       "notes" : "Apple IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2620:149::/32",
       "protocol" : "58",
-      "remote-addresses" : "2620:149:*:*:*:*:*:*"
+      "remote-addresses" : "2620:149::/32"
     },
     {
       "action" : "allow",
       "notes" : "Apple South Asia IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2403:300::/32",
       "direction" : "incoming",
-      "remote-addresses" : "2403:300:*:*:*:*:*:*"
+      "remote-addresses" : "2403:300::/32"
     },
     {
       "action" : "allow",
       "notes" : "Apple South Asia IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2403:300::/32",
       "ports" : "80, 443",
-      "remote-addresses" : "2403:300:*:*:*:*:*:*"
+      "remote-addresses" : "2403:300::/32"
     },
     {
       "action" : "allow",
@@ -78,7 +85,7 @@
       "action" : "allow",
       "notes" : "Apple South Asia IPv6 ranges\n\nRefer to https://ipinfo.io/AS714/2403:300::/32",
       "protocol" : "58",
-      "remote-addresses" : "2403:300:*:*:*:*:*:*"
+      "remote-addresses" : "2403:300::/32"
     },
     {
       "action" : "allow",
