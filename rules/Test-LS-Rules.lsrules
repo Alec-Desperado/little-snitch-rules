@@ -1,0 +1,10 @@
+{
+    "name": "Social Media Block List",
+    "description": "Blocks access to popular social media sites.",
+    "denied-remote-notes": "Block access to %REMOTE%",
+    "denied-remote-domains": [
+      "facebook.com",
+      "twitter.com",
+      "youtube.com"
+    ]
+}
