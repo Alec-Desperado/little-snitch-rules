@@ -1,108 +1,39 @@
 {
-  "description": "",
-  "name": "Trustd",
+  "description": "Certificate validation\n  https://support.apple.com/en-us/101555",
+  "name": "Apple Trustd. Certificate validation",
   "rules": [
     {
       "action": "allow",
       "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
+      "ports": "80",
       "process": "identifier.APPLE/com.apple.trustd",
       "remote-hosts": [
         "certs.apple.com",
+        "crl.apple.com",
+        "ocsp.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "",
+      "ports": "443",
+      "process": "identifier.APPLE/com.apple.trustd",
+      "remote-hosts": [
+        "certs.apple.com",
+        "valid.apple.com",
         "ocsp2.apple.com"
       ]
     },
     {
       "action": "allow",
       "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
+      "ports": "80",
       "process": "identifier.APPLE/com.apple.trustd",
       "remote-hosts": [
         "crl3.digicert.com",
         "crl4.digicert.com",
         "ocsp.digicert.com",
-        "ocsp2.digicert.com",
-        "cacerts.digicert.com"
-      ]
-    },
-    {
-      "action": "allow",
-      "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
-      "process": "identifier.APPLE/com.apple.trustd",
-      "remote-hosts": [
-        "ocsp.usertrust.com"
-      ]
-    },
-    {
-      "action": "allow",
-      "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
-      "process": "identifier.APPLE/com.apple.trustd",
-      "remote-hosts": [
-        "ocsp.comodoca.com"
-      ]
-    },
-    {
-      "action": "allow",
-      "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
-      "process": "identifier.APPLE/com.apple.trustd",
-      "remote-hosts": [
-        "ocsp.globalsign.com",
-        "ocsp2.globalsign.com",
-        "secure.globalsign.com"
-      ]
-    },
-    {
-      "action": "allow",
-      "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
-      "process": "identifier.APPLE/com.apple.trustd",
-      "remote-hosts": [
-        "x1.i.lencr.org",
-        "yr.i.lencr.org",
-        "yr2.i.lencr.org",
-        "ye.i.lencr.org",
-        "x2.i.lencr.org",
-        "ye1.i.lencr.org"
-      ]
-    },
-    {
-      "action": "allow",
-      "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
-      "process": "identifier.APPLE/com.apple.trustd",
-      "remote-hosts": [
-        "nuc-cdp.digital.gov.ru"
-      ]
-    },
-    {
-      "action": "allow",
-      "notes": "",
-      "ports": "80, 443",
-      "priority": "high",
-      "process": "identifier.APPLE/com.apple.trustd",
-      "remote-hosts": [
-        "nuc-cdp.voskhod.ru"
-      ]
-    },
-    {
-      "action": "allow",
-      "notes": "Refer to https://support.apple.com/en-us/HT210060\n - Certificate validation",
-      "ports": "80, 443",
-      "priority": "high",
-      "process": "identifier.APPLE/com.apple.trustd",
-      "remote-hosts": [
-        "crl.entrust.net",
-        "ocsp.entrust.net"
+        "ocsp.digicert.cn"
       ]
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "description": "Apple Domain Name System resolution.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple Domain Name System resolution",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Used for DNS over HTTPS (DoH)",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "doh.dns.apple.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "description": "Apple Account.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple Account",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Apple Account authentication in Settings and System Preferences",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "account.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Apple Account authentication in Settings and System Preferences",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "appleid.cdn-apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Apple Account authentication",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "idmsa.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  Apple Account authentication",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "gsa.apple.com"
+      ]
+    }
+  ]
+}

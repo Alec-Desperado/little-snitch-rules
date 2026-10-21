@@ -1,0 +1,246 @@
+{
+  "description": "Apple iCloud.\n  Refer to https://support.apple.com/en-us/101555",
+  "name": "Apple iCloud",
+  "rules": [
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "apple-cloudkit.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "apple-livephotoskit.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services in China",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "apzones.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "cdn-apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "gc.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services in China",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "icloud.com.cn"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "icloud.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "icloud-content.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-domains": [
+        "icloud-content.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iWork documents",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "iwork.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud Private Relay",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "mask.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud Private Relay",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "mask-h2.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud Private Relay",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "mask-api.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud connection testing",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "probe.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud connection testing",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "probe.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud connection testing",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "pong.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud connection testing",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "pong.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud device diagonostics",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "metrics.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  iCloud device diagonostics",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "metrics.icloud.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  RCS",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-hosts": [
+        "apple-native-relay.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  RCS",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "udp",
+      "remote-hosts": [
+        "apple-native-relay.apple.com"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  DNS for iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "apple-dns.net"
+      ]
+    },
+    {
+      "action": "allow",
+      "notes": "Allow outgoing.\n  DNS for iCloud services",
+      "ports": "443",
+      "process": "appGroup.macOS",
+      "protocol": "tcp",
+      "remote-domains": [
+        "apple-dns.net"
+      ]
+    }
+  ]
+}
