@@ -1,7 +1,28 @@
 {
-  "description": "Deny Rules",
   "name": "Deny Rules",
+  "description": "Deny Rules",
   "rules": [
+    {
+      "action": "deny",
+      "notes": "AddThis",
+      "process": "any",
+      "remote-domains": [
+        "addthis.com",
+        "addthisedge.com",
+        "addthiscdn.com"
+      ]
+    },
+    {
+      "action": "deny",
+      "notes": "Adjust",
+      "process": "any",
+      "remote-domains": [
+        "adjust.world",
+        "adjust.net.in",
+        "adjust.com",
+        "adjust.io"
+      ]
+    },
     {
       "action": "deny",
       "notes": "Trackers",
